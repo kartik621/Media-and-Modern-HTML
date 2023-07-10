@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Index</title>
+</head>
+<body style="background-color: #c5d5cb;">
+    <h1 style="margin: 20px;">Short Note on Tab Index</h1>
+    <p style="margin: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tab index is an attribute used in web development to specify the order in which elements can be accessed using the keyboard's <br> Tab key. It determines the focus navigation sequence when users navigate through a web page using the keyboard, allowing <br> them to move between interactive elements easily. <br>
+        <br>
+        The tab index attribute can be applied to various HTML elements such as links, form controls (input fields, checkboxes, radio <br> buttons, etc.), buttons, and other focusable elements. It assigns a numerical value to each element, indicating its position in the <br> tabbing order. The value of the tab index attribute can be positive, zero, or negative.
+        <br>
+        <br>
+        - A positive tab index (e.g., 1, 2, 3) indicates the element will be included in the default tab order and determines the sequence <br> in which it receives focus when the Tab key is pressed. The element with the lowest positive tab index value is the first to receive <br> focus, followed by the element with the next higher value, and so on.
+        <br>
+        <br>
+        - A zero tab index (tabindex="0") allows an element to be included in the default tab order based on its position in the HTML <br> document's source order. It behaves like a positive tab index but is typically used to make non-interactive elements, such as <br> divs or spans, focusable for accessibility purposes. This can be useful when adding interactive behavior to elements through <br> JavaScript.
+        <br>
+        <br>
+        - A negative tab index (e.g., -1) excludes an element from the default tab order, meaning it cannot be reached by pressing the <br> Tab key. However, it can still receive focus programmatically using JavaScript. This is often used for elements that are hidden, <br> but should still be accessible to assistive technologies or for elements that have alternative ways of receiving focus (e.g., <br> through JavaScript events).
+        <br>
+        <br>
+        It's important to note that relying solely on tab index for navigation can lead to accessibility issues if not implemented correctly. <br> It's recommended to follow proper HTML structure and semantics, ensuring elements are ordered logically in the source code. <br> This allows users to navigate the page naturally and intuitively using the Tab key, without needing to rely on modifying the tab <br> index manually.</p>
+</body>
+</html>
